@@ -25,6 +25,27 @@ main {
     margin-top: 0px;
 }
 
+.display {
+    width: 200px;
+    height: 150px;
+    background: gray;
+    border-radius: 20px;
+    /* make display into a flexbox to center count-el */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#count-el {
+    font-size: 90px;
+}
+
+.record {
+    text-align: left;
+    font-size: 20px;
+}
+
+
 /* Utlity class */ 
 .border-blue {
     border: 1px solid blue;
