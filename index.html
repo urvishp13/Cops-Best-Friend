@@ -8,17 +8,21 @@
 
 <body>
 
-    <h1>Cops' Best Friend</h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
-    <h2 class="title">Number of Speeders</h2>
-    <div class="dislay"> <!-- will be styled, that's why given a class and not an ID -->
-        <p id="count-el">0</p> <!-- will be accessed in the JS -->
-    </div>
-    <p>Violators:</p>
-    <div class="container">
-        <button>INCREMENT</button>
-        <button>RECORD</button>
-        <button>REPORT</button>
-    </div>
+    <main class="wrapper">
+        <div class="container">
+            <h1>Cops' Best Friend</h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
+            <h2 class="title">Number of Speeders</h2>
+            <div class="dislay"> <!-- will be styled, that's why given a class and not an ID -->
+                <p id="count-el">0</p> <!-- will be accessed in the JS -->
+            </div>
+            <p>Violators:</p>
+            <div class="container">
+                <button>INCREMENT</button>
+                <button>RECORD</button>
+                <button>REPORT</button>
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
