@@ -41,3 +41,5 @@ function timer() {
         recordEl.textContent = "Violators Log:"
     }
 }
+
+// added functionality to REPORT button
