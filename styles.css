@@ -64,7 +64,7 @@ span {
     font-family: 'Bevan', cursive;
 }
 
-.record {
+#record-el {
     text-align: left;
     font-size: 25px;
 }
