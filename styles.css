@@ -17,12 +17,18 @@ main {
     background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
 }
 
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+}
+
 .container {
     padding: 50px;
 }
 
 .desc {
     margin-top: 0px;
+    font-size: 40px;
 }
 
 .display {
@@ -34,6 +40,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 #count-el {
@@ -53,9 +60,11 @@ main {
 
 button {
     border: none;
-    padding: 10px 20px;
-    flex-basis: 100px; /* the buttons will get 100px width but there will be white space left over */
+    padding: 12px 24px;
+    flex-basis: 150px; /* the buttons will get 100px width but there will be white space left over */
     flex-grow: 1; /* to get rid of white space to the right of the buttons */
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 /* Utlity class */ 
