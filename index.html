@@ -13,18 +13,24 @@
 
     <main>
         <h1>Cops' <span>Best Friend</span></h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
-        <div class="container"> <!-- contains all the content -->
-            <h2 class="desc">Number of Speeders</h2>
-            <div class="display"> <!-- will be styled, that's why given a class and not an ID -->
-                <p id="count-el">0</p> <!-- will be accessed in the JS, that's why given an ID -->
+        <div class="container-a">
+            <div class="container-b"> <!-- contains all the content -->
+                <h2 class="desc">Number of Speeders</h2>
+                <div class="display"> <!-- will be styled, that's why given a class and not an ID -->
+                    <p id="count-el">0</p> <!-- will be accessed in the JS, that's why given an ID -->
+                </div>
+                <p class="record">Violators:</p> <!-- place to record numbers of cars speeding -->
+                <div class="btn-container">
+                    <button id="increment-btn">INCREMENT</button> <!-- will be accessed in the JS, that's why given an ID -->
+                    <button id="record-btn">RECORD</button> <!-- will be accessed in the JS, that's why given an ID -->
+                    <button id="report-btn">REPORT</button> <!-- will be accessed in the JS, that's why given an ID -->
+                </div>
             </div>
-            <p class="record">Violators:</p> <!-- place to record numbers of cars speeding -->
-            <div class="btn-container">
-                <button id="increment-btn">INCREMENT</button> <!-- will be accessed in the JS, that's why given an ID -->
-                <button id="record-btn">RECORD</button> <!-- will be accessed in the JS, that's why given an ID -->
-                <button id="report-btn">REPORT</button> <!-- will be accessed in the JS, that's why given an ID -->
+            <div class="timer">
+                <p>Time left until record resets:</p>
+                <p id="timer-el">1:00</p>
             </div>
-        </div>
+        </div> 
     </main>
 
     <script src="script.js"></script>

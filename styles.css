@@ -11,12 +11,13 @@ body {
 }
 
 main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
+    position: relative;
 }
 
 h1 {
@@ -30,10 +31,18 @@ span {
     font-size: 84px;
 }
 
-.container {
+.container-a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-b,
+.timer {
     padding: 50px;
     background: rgba(215, 219, 105, 0.659);
     border-radius: 20px;
+    margin-right: 124px;
 }
 
 .desc {
@@ -91,6 +100,20 @@ button {
 
 #report-btn {
     background: rgba(37, 71, 86, 0.875);
+}
+
+.timer {
+    width: 175px;
+    font-size: 20px;
+}
+
+.timer p {
+    margin: 0;
+}
+
+#timer-el {
+    font-family: 'Bevan', cursive;
+    font-size: 50px;
 }
 
 /* Utlity class */ 
