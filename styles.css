@@ -83,7 +83,7 @@ button {
     border-radius: 5px;
     font-size: 18px;
     color: #DDD9DA;
-    text-shadow: inherit;
+    text-shadow: 0px 0px 1px #3C3331;
     cursor: pointer;
 }
 
