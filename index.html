@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Orelega+One&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <title>Cops' Best Friend</title>
 </head>
@@ -9,17 +12,17 @@
 <body>
 
     <main>
-        <h1>Cops' Best Friend</h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
-        <div class="container border-blue"> <!-- contains all the content -->
+        <h1>Cops' <span>Best Friend</span></h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
+        <div class="container"> <!-- contains all the content -->
             <h2 class="desc">Number of Speeders</h2>
             <div class="display"> <!-- will be styled, that's why given a class and not an ID -->
                 <p id="count-el">0</p> <!-- will be accessed in the JS -->
             </div>
             <p class="record">Violators:</p>
             <div class="btn-container">
-                <button>INCREMENT</button>
-                <button>RECORD</button>
-                <button>REPORT</button>
+                <button id="increment-btn">INCREMENT</button>
+                <button id="record-btn">RECORD</button>
+                <button id="report-btn">REPORT</button>
             </div>
         </div>
     </main>
