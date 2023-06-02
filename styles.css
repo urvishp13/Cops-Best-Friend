@@ -14,13 +14,14 @@ main {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
     position: relative;
+    padding-top: 20px;
 }
 
 h1 {
     font-size: 98px;
     margin: 0;
     font-family: 'Orelega One', cursive;
-    line-height: 150px;
+    /* line-height: 150px; */
 }
 
 span {

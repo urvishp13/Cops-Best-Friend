@@ -17,6 +17,7 @@ function increment() {
 // add functionality to RECORD button
     // make it so that it saves the counted (incremented) value to recordEl
 function record() {
+    // console.log("record button clicked")
     recordEl.textContent += " " + count + ", "
     // reset count and countEl to 0 to start anew for next counting
     count = 0
