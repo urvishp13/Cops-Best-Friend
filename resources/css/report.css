@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-image: url("../images/police.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
+    height: 100vh;
+    padding: 20px;
+    /* flexbox to center form to center of page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
