@@ -1,4 +1,4 @@
-// grab increment-el from document
+// grab count-el from document to be able to change its value
 const countEl = document.getElementById("count-el")
 
 console.log(countEl)
