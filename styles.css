@@ -8,6 +8,7 @@ body {
     text-align: center;
     color: #3C3331;
     text-shadow: 0px 0px 1px #bd512e;
+    overflow: hidden;
 }
 
 main {
