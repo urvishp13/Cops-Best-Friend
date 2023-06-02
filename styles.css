@@ -45,6 +45,18 @@ main {
     font-size: 20px;
 }
 
+.btn-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    flex-basis: 100px; /* the buttons will get 100px width but there will be white space left over */
+    flex-grow: 1; /* to get rid of white space to the right of the buttons */
+}
 
 /* Utlity class */ 
 .border-blue {
