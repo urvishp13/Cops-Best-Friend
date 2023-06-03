@@ -85,6 +85,11 @@ button {
     font-family: 'Bevan', cursive;
 }
 
+span {
+    font-family: initial;
+    color: red;
+}
+
 .border-blue {
     border: 1px solid blue;
 }

@@ -33,6 +33,7 @@ function showFields() {
     const lastName = document.getElementById("last-name")
     const firstName = document.getElementById("first-name")
     const submitBtn = document.getElementById("submit-btn")
+    const spans = document.getElementsByTagName("span")
 
     // console.log(town)
 
@@ -48,6 +49,7 @@ function showFields() {
     if (notResident.checked)  {
         // display a message to them
         notResidentFields.style.display = 'block'
+        
         // disable the form controls
         town.disabled = true
         lastName.disabled = true
@@ -62,10 +64,14 @@ function showFields() {
         lastName.style.cursor = "not-allowed"
         firstName.style.cursor = "not-allowed"
         submitBtn.style.cursor = "not-allowed"
+
+        // make astericks for required fields "disappear"
+        for (span of spans) span.style.visibility = "hidden"
     }
     else {
         // else, don't display message
         notResidentFields.style.display = "none"
+        
         // enable the form controls
         town.disabled = false
         lastName.disabled = false
@@ -80,5 +86,8 @@ function showFields() {
         lastName.style.cursor = "text"
         firstName.style.cursor = "text"
         submitBtn.style.cursor = "pointer"
+
+        // make astericks for required fields "appear"
+        for (span of spans) span.style.visibility = "visible"
     }
 }
