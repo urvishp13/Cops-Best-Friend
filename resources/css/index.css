@@ -27,7 +27,7 @@ h1 {
     line-height: 150px;
 }
 
-span {
+span.in-title {
     font-family: 'Shrikhand', cursive;
     font-size: 84px;
 }

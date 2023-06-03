@@ -13,62 +13,65 @@
     
     <!-- Flex Container -->
     <main>
-        <!-- Create a form with a dummy link to send to -->
-        <form action="#" method="post">
-            <!-- Nested Flex Container -->
-            <ul>
-                <li>
-                    <label for="town">Town reporting for<span aria-label=required>*</span></label>
-                    <input type="text" id="town" name="reporting_town" required>
-                </li>
-                <li>
-                    <p>Are you a resident of this town?<span aria-label=required>*</span></p>
-                    <label for="resident">
-                        <input type="radio" id="resident" onclick="showFields()" name="resident" value="resident" required>
-                            Yes
-                    </label>
-                    <label for="not-resident">
-                        <input class="border-blue" type="radio" id="not-resident" onclick="showFields()" name="resident"
-                        value="not-resident" required>
-                            No
-                    </label>
-                    <ul id="resident-fields">
-                        <li>
-                            <label for="residency-street">Street you live on<span aria-label=required>*</span></label>
-                            <input type="text" id="residency-street" name="residency-street" required>
-                        </li>
-                        <li>
-                            <label for="street-reporting">Street reporting cars on<span aria-label=required>*</span></label>
-                            <input type="text" id="street-reporting" name="street-reporting" required>
-                        </li>
-                    </ul>
-                    <ul id="not-resident-fields">
-                        <li>
-                            <p>You can't submit this report.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="name">
-                    <div>
-                        <label for="last-name">Last Name<span aria-label=required>*</span></label>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </div>
-                    <div>
-                        <label for="first-name">First Name<span aria-label=required>*</span></label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
-                </li>
-                <li>
-                    <p>Number of Violators: <span id="total-violators-el"></span></p>
-                </li>
-                <li class="button">
-                    <button type="submit" id="submit-btn">Submit Report</button>
-                </li>
-            </ul>
-        </form>
-        <div class="timer">
-            <p>Time left until record resets:</p>
-            <p id="timer-el"></p>
+        <h1>Cops' <span class="in-title">Best Friend</span></h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
+        <div class="container">
+            <!-- Create a form with a dummy link to send to -->
+            <form action="#" method="post">
+                <!-- Nested Flex Container -->
+                <ul>
+                    <li>
+                        <label for="town">Town reporting for<span aria-label=required>*</span></label>
+                        <input type="text" id="town" name="reporting_town" required>
+                    </li>
+                    <li>
+                        <p>Are you a resident of this town?<span aria-label=required>*</span></p>
+                        <label for="resident">
+                            <input type="radio" id="resident" onclick="showFields()" name="resident" value="resident" required>
+                                Yes
+                        </label>
+                        <label for="not-resident">
+                            <input class="border-blue" type="radio" id="not-resident" onclick="showFields()" name="resident"
+                            value="not-resident" required>
+                                No
+                        </label>
+                        <ul id="resident-fields">
+                            <li>
+                                <label for="residency-street">Street you live on<span aria-label=required>*</span></label>
+                                <input type="text" id="residency-street" name="residency-street" required>
+                            </li>
+                            <li>
+                                <label for="street-reporting">Street reporting cars on<span aria-label=required>*</span></label>
+                                <input type="text" id="street-reporting" name="street-reporting" required>
+                            </li>
+                        </ul>
+                        <ul id="not-resident-fields">
+                            <li>
+                                <p>You can't submit this report.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="name">
+                        <div>
+                            <label for="last-name">Last Name<span aria-label=required>*</span></label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div>
+                            <label for="first-name">First Name<span aria-label=required>*</span></label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Number of Violators: <span id="total-violators-el"></span></p>
+                    </li>
+                    <li class="button">
+                        <button type="submit" id="submit-btn">Submit Report</button>
+                    </li>
+                </ul>
+            </form>
+            <div class="timer">
+                <p>Time left until record resets:</p>
+                <p id="timer-el"></p>
+            </div>
         </div>
     </main>
 
