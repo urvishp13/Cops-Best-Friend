@@ -2,7 +2,7 @@
 const countEl = document.getElementById("count-el")
 const recordEl = document.getElementById("record-el")
 
-console.log(recordEl)
+// console.log(recordEl)
 
 // create and initialize variable count so can use in functions
 let count = 0
