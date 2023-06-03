@@ -17,3 +17,42 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+form {
+    background: rgba(215, 219, 105, 0.659);
+    padding: 20px;
+    height: 80vh;
+    width: 25vw;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.button {
+    margin: auto auto 0;
+}
+
+input[type="text"] {
+    display: block;
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
