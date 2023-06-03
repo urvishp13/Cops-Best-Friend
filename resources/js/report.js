@@ -25,19 +25,38 @@ getTotalNumberOfViolators()
 localStorage.clear()
 
 function showFields() {
+    const resident = document.getElementById("resident")
+    const notResident = document.getElementById("not-resident")
+
+    const ifResident = document.getElementById("if-resident")
+    const ifNotResident = document.getElementById("if-not-resident")
+
+    const lastName = document.getElementById("last-name")
+    const firstName = document.getElementById("first-name")
+
     // if the person submitting the report is a resident of the town
-    if (document.getElementById("resident").checked) 
+    if (resident.checked) 
         // display the proceeding fields to fill out
-        document.getElementById("if-resident").style.display = 'block'
+        ifResident.style.display = 'block'
     else 
         // else, hide them
-        document.getElementById("if-resident").style.display = "none"
+        ifResident.style.display = "none"
 
     // if the person submitting the report is NOT a resident of the town
-    if (document.getElementById("not-resident").checked) 
+    if (notResident.checked)  {
         // display a message to them
-        document.getElementById("if-not-resident").style.display = 'block'
-    else 
+        ifNotResident.style.display = 'block'
+        // disable the form controls below message
+        lastName.disabled = true
+        firstName.disabled = true
+        document.getElementsByTagName("button").disable = true
+    }
+    else {
         // else, don't display message
-        document.getElementById("if-not-resident").style.display = "none"
+        ifNotResident.style.display = "none"
+        // enable the form controls below the radio heads
+        lastName.disabled = false
+        firstName.disabled = false
+        document.getElementsByTagName("button").disable = false
+    }
 }
