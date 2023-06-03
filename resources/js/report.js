@@ -25,5 +25,19 @@ getTotalNumberOfViolators()
 localStorage.clear()
 
 function showFields() {
-    
+    // if the person submitting the report is a resident of the town
+    if (document.getElementById("resident").checked) 
+        // display the proceeding fields to fill out
+        document.getElementById("if-resident").style.display = 'block'
+    else 
+        // else, hide them
+        document.getElementById("if-resident").style.display = "none"
+
+    // if the person submitting the report is NOT a resident of the town
+    if (document.getElementById("not-resident").checked) 
+        // display a message to them
+        document.getElementById("if-not-resident").style.display = 'block'
+    else 
+        // else, don't display message
+        document.getElementById("if-not-resident").style.display = "none"
 }

@@ -21,11 +21,11 @@
                 </li>
                 <li>
                     <p>Are you a resident of this town?</p>
-                    <input type="radio" id="resident" name="resident">
+                    <input type="radio" id="resident" onclick="showFields()" name="resident">
                     <label for="resident">Yes</label>
-                    <input class="border-blue" type="radio" id="not-resident" name="resident">
+                    <input class="border-blue" type="radio" id="not-resident" onclick="showFields()" name="resident">
                     <label for="not-resident">No</label>
-                    <ul class="if-resident">
+                    <ul id="if-resident">
                         <li>
                             <label for="residency-street">Street you live on</label>
                             <input type="text" id="residency-street" name="residency-street">
@@ -35,7 +35,7 @@
                             <input type="text" id="street-reporting" name="street-reporting">
                         </li>
                     </ul>
-                    <ul class="if-not-resident">
+                    <ul id="if-not-resident">
                         <li>
                             <p>You can't submit this report.</p>
                         </li>
