@@ -19,7 +19,9 @@ function increment() {
     // make it so that it saves the counted (incremented) value to recordEl
 function record() {
     // console.log("record button clicked")
-    recordEl.textContent += " " + count + ", "
+    recordEl.textContent += count + ", "
+    // save data to localStorage to be able to persist through other webpages
+    localStorage.setItem("violators", recordEl.textContent)
     // reset count and countEl to 0 to start anew for next counting
     count = 0
     countEl.textContent = 0
