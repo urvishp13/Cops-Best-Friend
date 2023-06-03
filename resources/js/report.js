@@ -2,14 +2,14 @@
 const violators = localStorage.getItem("violators") // a String
 const totalViolatorsEl = document.getElementById("total-violators-el")
 
-console.log(violators)
-console.log(totalViolatorsEl)
+// console.log(violators)
+// console.log(totalViolatorsEl)
 
 // write to the document the TOTAL number of violators
 function getTotalNumberOfViolators() {
     const arr = violators.split(", ")
 
-    console.log("arr", arr)
+    // console.log("arr", arr)
 
     let totalViolators = 0
 
@@ -34,7 +34,7 @@ function showFields() {
     const firstName = document.getElementById("first-name")
     const submitBtn = document.getElementById("submit-btn")
 
-    console.log(town)
+    // console.log(town)
 
     // if the person submitting the report is a resident of the town
     if (resident.checked) 
