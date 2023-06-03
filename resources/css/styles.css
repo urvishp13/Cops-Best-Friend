@@ -66,9 +66,15 @@ span {
     font-family: 'Bevan', cursive;
 }
 
-#record-el {
+.log {
     text-align: left;
     font-size: 25px;
+}
+
+#record-el {
+    text-align: inherit;
+    font-size: inherit;
+    font-family: initial;
 }
 
 .btn-container {

@@ -3,7 +3,7 @@ const countEl = document.getElementById("count-el")
 const recordEl = document.getElementById("record-el")
 const timerEl = document.getElementById("timer-el")
 
-console.log(timerEl)
+console.log(recordEl)
 
 // create and initialize variable count so can use in functions
 let count = 0
@@ -38,7 +38,7 @@ function timer() {
     timerEl.textContent = 60 - currentSecond
     // when the timer hits 0, reset countEl and count (the timer gets reset to 1min automatically)
     if (currentSecond === 0) {
-        recordEl.textContent = "Violators Log:"
+        recordEl.textContent = " "
     }
 }
 
