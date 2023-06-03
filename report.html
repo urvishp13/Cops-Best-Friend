@@ -11,21 +11,25 @@
         <!-- Create a form with a dummy link to send to -->
         <form action="#" method="post">
             <!-- Nested Flex Container -->
-            <ul class="border-blue">
+            <ul>
                 <li>
                     <label for="town">Town reporting for</label>
                     <input type="text" id="town" name="reporting_town">
                 </li>
                 <li>
                     <p>Are you a citizen of this town?</p>
-                    <input class="border-blue" type="radio" id="citizen" name="citizen">
+                    <input type="radio" id="citizen" name="citizen">
                     <label for="citizen">Yes</label>
                     <input class="border-blue" type="radio" id="not-citizen" name="citizen">
                     <label for="not-citizen">No</label>
                 </li>
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                <li class="name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </li>
+                <li class="name">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
                 </li>
                 <li class="button">
                     <button type="submit">Submit Report</button>
