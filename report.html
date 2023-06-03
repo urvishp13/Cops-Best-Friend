@@ -20,11 +20,26 @@
                     <input type="text" id="town" name="reporting_town">
                 </li>
                 <li>
-                    <p>Are you a citizen of this town?</p>
-                    <input type="radio" id="citizen" name="citizen">
-                    <label for="citizen">Yes</label>
-                    <input class="border-blue" type="radio" id="not-citizen" name="citizen">
-                    <label for="not-citizen">No</label>
+                    <p>Are you a resident of this town?</p>
+                    <input type="radio" id="resident" name="resident">
+                    <label for="resident">Yes</label>
+                    <input class="border-blue" type="radio" id="not-resident" name="resident">
+                    <label for="not-resident">No</label>
+                    <ul class="if-resident">
+                        <li>
+                            <label for="residency-street">Street you live on</label>
+                            <input type="text" id="residency-street" name="residency-street">
+                        </li>
+                        <li>
+                            <label for="street-reporting">Town reporting for</label>
+                            <input type="text" id="street-reporting" name="street-reporting">
+                        </li>
+                    </ul>
+                    <ul class="if-not-resident">
+                        <li>
+                            <p>You can't submit this report.</p>
+                        </li>
+                    </ul>
                 </li>
                 <li class="name">
                     <div>

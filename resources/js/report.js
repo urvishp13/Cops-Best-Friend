@@ -23,3 +23,7 @@ getTotalNumberOfViolators()
 
 // clear localStorage of all data
 localStorage.clear()
+
+function showFields() {
+    
+}
