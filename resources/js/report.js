@@ -1,9 +1,9 @@
 // get the number of violator from localStorage
 const violators = localStorage.getItem("violators") // a String
-const violatorsNumEl = document.getElementById("violators-num-el")
+const totalViolatorsEl = document.getElementById("total-violators-el")
 
 console.log(violators)
-console.log(violatorsNumEl)
+console.log(totalViolatorsEl)
 
 // write to the document the TOTAL number of violators
 function getTotalNumberOfViolators() {
@@ -11,10 +11,15 @@ function getTotalNumberOfViolators() {
 
     console.log("arr", arr)
 
-    let violatorsNum = 0
-    for (let i = 0; i < arr.length - 1; i++) violatorsNum += arr[i]
+    let totalViolators = 0
+
+    // go up to length - 1 because the last element is an empty String (i.e. "")
+    for (let i = 0; i < arr.length - 1; i++) totalViolators += parseInt(arr[i])
+
+    totalViolatorsEl.textContent = totalViolators
 }
 
 getTotalNumberOfViolators()
 
 // clear localStorage of all data
+localStorage.clear()
