@@ -53,6 +53,15 @@ function showFields() {
         lastName.disabled = true
         firstName.disabled = true
         submitBtn.disabled = true
+
+        town.style.background = "lightgrey"
+        lastName.style.background = "lightgrey"
+        firstName.style.background = "lightgrey"
+
+        town.style.cursor = "not-allowed"
+        lastName.style.cursor = "not-allowed"
+        firstName.style.cursor = "not-allowed"
+        submitBtn.style.cursor = "not-allowed"
     }
     else {
         // else, don't display message
@@ -62,5 +71,14 @@ function showFields() {
         lastName.disabled = false
         firstName.disabled = false
         submitBtn.disabled = false
+
+        town.style.background = "rgba(247, 247, 247, 0.761)"
+        lastName.style.background = "rgba(247, 247, 247, 0.761)"
+        firstName.style.background = "rgba(247, 247, 247, 0.761)"
+        
+        town.style.cursor = "text"
+        lastName.style.cursor = "text"
+        firstName.style.cursor = "text"
+        submitBtn.style.cursor = "pointer"
     }
 }
