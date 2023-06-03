@@ -1,3 +1,7 @@
+html {
+    overscroll-behavior: none
+}
+
 body {
     margin: 0;
     background-image: url("../images/police.jpg");
@@ -8,21 +12,19 @@ body {
     text-align: center;
     color: #3C3331;
     text-shadow: 0px 0px 1px #bd512e;
-    overflow: hidden;
 }
 
 main {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
     position: relative;
-    padding-top: 20px;
 }
 
 h1 {
     font-size: 98px;
     margin: 0;
     font-family: 'Orelega One', cursive;
-    /* line-height: 150px; */
+    line-height: 150px;
 }
 
 span {
