@@ -25,7 +25,7 @@
                     <label for="resident">Yes</label>
                     <input class="border-blue" type="radio" id="not-resident" onclick="showFields()" name="resident">
                     <label for="not-resident">No</label>
-                    <ul id="if-resident">
+                    <ul id="resident-fields">
                         <li>
                             <label for="residency-street">Street you live on</label>
                             <input type="text" id="residency-street" name="residency-street">
@@ -35,7 +35,7 @@
                             <input type="text" id="street-reporting" name="street-reporting">
                         </li>
                     </ul>
-                    <ul id="if-not-resident">
+                    <ul id="not-resident-fields">
                         <li>
                             <p>You can't submit this report.</p>
                         </li>
@@ -55,7 +55,7 @@
                     <p>Number of Violators: <span id="total-violators-el"></span></p>
                 </li>
                 <li class="button">
-                    <button type="submit">Submit Report</button>
+                    <button type="submit" id="submit-btn">Submit Report</button>
                 </li>
             </ul>
         </form>

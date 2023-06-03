@@ -61,8 +61,8 @@ input[type="radio"] {
     margin: 20px 0px 20px 40px;
 }
 
-#if-resident,
-#if-not-resident {
+#resident-fields,
+#not-resident-fields {
     margin-left: 40px;
     display: none;
 }

@@ -25,38 +25,42 @@ getTotalNumberOfViolators()
 localStorage.clear()
 
 function showFields() {
+    const town = document.getElementById("town")
     const resident = document.getElementById("resident")
     const notResident = document.getElementById("not-resident")
-
-    const ifResident = document.getElementById("if-resident")
-    const ifNotResident = document.getElementById("if-not-resident")
-
+    const residentFields = document.getElementById("resident-fields")
+    const notResidentFields = document.getElementById("not-resident-fields")
     const lastName = document.getElementById("last-name")
     const firstName = document.getElementById("first-name")
+    const submitBtn = document.getElementById("submit-btn")
+
+    console.log(town)
 
     // if the person submitting the report is a resident of the town
     if (resident.checked) 
         // display the proceeding fields to fill out
-        ifResident.style.display = 'block'
+        residentFields.style.display = 'block'
     else 
         // else, hide them
-        ifResident.style.display = "none"
+        residentFields.style.display = "none"
 
     // if the person submitting the report is NOT a resident of the town
     if (notResident.checked)  {
         // display a message to them
-        ifNotResident.style.display = 'block'
-        // disable the form controls below message
+        notResidentFields.style.display = 'block'
+        // disable the form controls
+        town.disabled = true
         lastName.disabled = true
         firstName.disabled = true
-        document.getElementsByTagName("button").disable = true
+        submitBtn.disabled = true
     }
     else {
         // else, don't display message
-        ifNotResident.style.display = "none"
-        // enable the form controls below the radio heads
+        notResidentFields.style.display = "none"
+        // enable the form controls
+        town.disabled = false
         lastName.disabled = false
         firstName.disabled = false
-        document.getElementsByTagName("button").disable = false
+        submitBtn.disabled = false
     }
 }
