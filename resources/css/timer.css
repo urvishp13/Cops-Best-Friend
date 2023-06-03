@@ -4,6 +4,9 @@
     margin-bottom: 135px;
     font-family: initial;
     text-align: center;
+    padding: 50px;
+    background: rgba(215, 219, 105, 0.659);
+    border-radius: 20px;
 }
 
 .timer p {
