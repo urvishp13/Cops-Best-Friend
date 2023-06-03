@@ -20,7 +20,8 @@ main {
     align-items: center;
 }
 
-form {
+form,
+.timer {
     background: rgba(215, 219, 105, 0.659);
     padding: 20px;
     border-radius: 20px;

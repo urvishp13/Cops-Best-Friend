@@ -1,0 +1,16 @@
+.timer {
+    width: 175px;
+    font-size: 20px;
+    margin-bottom: 135px;
+    font-family: initial;
+    text-align: center;
+}
+
+.timer p {
+    margin: 0;
+}
+
+#timer-el {
+    font-family: 'Bevan', cursive;
+    font-size: 50px;
+}
