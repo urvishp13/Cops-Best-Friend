@@ -33,13 +33,8 @@ span.in-title {
 .container {
     /* flexbox to center form to center of page */
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-}
-
-form,
-.timer {
-    margin-right: 129px;
 }
 
 form {
