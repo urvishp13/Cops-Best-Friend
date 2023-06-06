@@ -1,4 +1,4 @@
-// grab count-el from document to be able to change its value
+// grab count-el from DOM to be able to change its value
 const countEl = document.getElementById("count-el")
 const recordEl = document.getElementById("record-el")
 
@@ -27,3 +27,14 @@ function record() {
 }
 
 // added functionality to REPORT button
+function report() {
+    // if no violators logged (thus generating a falsy value), don't add functionality to the button
+    if (!localStorage.getItem("violators")) return
+
+    // console.log("local storage is not empty")
+
+    // else, redirect to the report.html page
+    window.location.href='report.html'
+    
+    // console.log("getting past the redirection line")
+}

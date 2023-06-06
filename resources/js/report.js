@@ -5,8 +5,12 @@ const totalViolatorsEl = document.getElementById("total-violators-el")
 // console.log(violators)
 // console.log(totalViolatorsEl)
 
-// write to the document the TOTAL number of violators
+// write to the DOM the TOTAL number of violators
 function getTotalNumberOfViolators() {
+    // if no violators logged, do nothing
+    if (!violators) return
+
+    // else, get the total number of violators
     const arr = violators.split(", ")
 
     // console.log("arr", arr)

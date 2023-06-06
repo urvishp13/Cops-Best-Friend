@@ -1,4 +1,4 @@
-// grab timer-el from document to be able to display countdown in it
+// grab timer-el from DOM to be able to display countdown in it
 const timerEl = document.getElementById("timer-el")
 
 // add functionality to the timer
@@ -14,6 +14,7 @@ function timer() {
     timerEl.textContent = 60 - currentSecond
     // when the timer hits 0, reset countEl and count (the timer gets reset to 1min automatically)
     if (currentSecond === 0) {
-        
+        recordEl.textContent = " " // recordEl is gotten from the global scope generated from being paired with index.js 
+                                   // in index.html
     }
 }
