@@ -37,9 +37,9 @@ function showFields() {
     const lastName = document.getElementById("last-name")
     const firstName = document.getElementById("first-name")
     const submitBtn = document.getElementById("submit-btn")
-    const spans = document.getElementsByTagName("span")
+    const requireds = document.getElementsByClassName("required")
 
-    // console.log(town)
+    console.log(requireds)
 
     // if the person submitting the report is a resident of the town
     if (resident.checked) 
@@ -70,7 +70,7 @@ function showFields() {
         submitBtn.style.cursor = "not-allowed"
 
         // make astericks for required fields "disappear"
-        for (span of spans) span.style.visibility = "hidden"
+        for (const required of requireds) required.style.visibility = "hidden"
     }
     else {
         // else, don't display message
@@ -92,6 +92,6 @@ function showFields() {
         submitBtn.style.cursor = "pointer"
 
         // make astericks for required fields "appear"
-        for (span of spans) span.style.visibility = "visible"
+        for (const required of requireds) required.style.visibility = "visible"
     }
 }
