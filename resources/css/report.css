@@ -18,6 +18,11 @@ main {
     padding-bottom: 50px;
     min-height: 100vh;
     box-sizing: border-box;
+    /* flexbox to center form to center of page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -31,13 +36,6 @@ span.in-title {
     font-family: 'Shrikhand', cursive;
     font-size: 84px;
     color: inherit;
-}
-
-.container {
-    /* flexbox to center form to center of page */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 form {
