@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-image: url("../images/police.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-shadow: 0px 0px 1px #bd512e;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
+    position: relative;
+}
+
+h1 {
+    font-size: 98px;
+    margin: 0;
+    font-family: 'Orelega One', cursive;
+    line-height: 150px;
+    text-align: center;
+    height: 100vh;
+}
+
+span.in-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 84px;
+}
+
+.message {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    padding: 50px;
+    background: rgba(215, 219, 105, 0.659);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Utility class */
+.border-blue {
+    border: 1px solid blue;
+}

@@ -15,7 +15,7 @@
     <main>
         <h1>Cops' <span class="in-title">Best Friend</span></h1> <!-- HTML documents only have 1 h1 elements in them so not giving this a class -->
         <!-- Create a form with a dummy link to send to -->
-        <form action="#" method="post">
+        <form action="/report-sent.html" method="GET">
             <!-- Nested Flex Container -->
             <ul>
                 <li>
@@ -63,7 +63,7 @@
                     <p>Number of Violators: <span id="total-violators-el"></span></p>
                 </li>
                 <li class="button">
-                    <button type="submit" id="submit-btn">Submit Report</button>
+                    <button type="submit" id="submit-btn" disabled>Submit Report</button>
                 </li>
             </ul>
         </form>
