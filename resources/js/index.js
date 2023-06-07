@@ -28,13 +28,21 @@ function record() {
 
 // added functionality to REPORT button
 function report() {
+    const submitBtn = document.getElementById("report-btn")
+
     // if no violators logged (thus generating a falsy value), don't add functionality to the button
-    if (!localStorage.getItem("violators")) return
+    if (!localStorage.getItem("violators")) {
+        submitBtn.style.cursor = "not-allowed"
+        submitBtn.title = "Violators log must be populated in order to submit a report"
+        return
+    }
 
-    // console.log("local storage is not empty")
+    console.log("local storage is not empty")
 
-    // else, redirect to the report.html page
-    window.location.href='report.html'
+    // else, add functionality to the button and use it to redirect to the report.html page
+    submitBtn.style.cursor = "pointer"
+    submitBtn.title = ""
+    window.location.href="report.html"
     
-    // console.log("getting past the redirection line")
+    console.log("getting past the redirection line")
 }

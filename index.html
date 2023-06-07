@@ -22,9 +22,15 @@
                 </div>
                 <p class="log">Violators Log: <span id="record-el"></span></p> <!-- place to record numbers of cars speeding -->
                 <div class="btn-container">
-                    <button id="increment-btn" onclick="increment()">INCREMENT</button> <!-- will be accessed in the JS, that's why given an ID -->
-                    <button id="record-btn" onclick="record()">RECORD</button> <!-- will be accessed in the JS, that's why given an ID -->
-                    <button id="report-btn" onclick="report()">REPORT</button> <!-- will be accessed in the JS, that's why given an ID -->
+                    <button id="increment-btn" onclick="increment()" title="Click to add one to the number of speeders">
+                        INCREMENT
+                    </button> <!-- will be accessed in the JS, that's why given an ID -->
+                    <button id="record-btn" onclick="record()" title="Click to add current number of speeders to Violators Log">
+                        RECORD
+                    </button> <!-- will be accessed in the JS, that's why given an ID -->
+                    <button id="report-btn" onclick="report()">
+                        REPORT
+                    </button> <!-- will be accessed in the JS, that's why given an ID -->
                 </div>
             </div>
             <div class="timer">
