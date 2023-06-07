@@ -30,6 +30,8 @@ function record() {
 
 // add functionality to REPORT button
 function redirect() {
+    // when clicked, clear Violators Log
+    recordEl.textContent = " "
     // redirect to the report.html page
     window.location.href="report.html"
 }
