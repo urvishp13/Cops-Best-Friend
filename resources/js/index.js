@@ -32,6 +32,9 @@ function record() {
 function redirect() {
     // when clicked, clear Violators Log
     recordEl.textContent = " "
+    // re-disable the submit button upon clicking it so, when someone comes back to index.html via the browser's back button, they
+    // can't submit the form with no speeders logged
+    submitBtn.disabled = true
     // redirect to the report.html page
     window.location.href="report.html"
 }
