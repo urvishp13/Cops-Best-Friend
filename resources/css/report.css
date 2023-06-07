@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-image: url("../images/police.jpg");
@@ -14,7 +15,9 @@ body {
 
 main {
     background: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
-    height: 100vh;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 h1 {
