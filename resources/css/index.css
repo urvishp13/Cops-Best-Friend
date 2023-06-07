@@ -87,8 +87,7 @@ span.in-title {
 button {
     border: none;
     padding: 12px 24px;
-    flex-basis: 150px; /* the buttons will get 100px width but there will be white space left over */
-    flex-grow: 1; /* to get rid of white space to the right of the buttons */
+    flex: 1 1 calc(50% - 10px);
     border-radius: 5px;
     font-size: 18px;
     color: #DDD9DA;
