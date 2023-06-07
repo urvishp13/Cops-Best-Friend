@@ -12,9 +12,14 @@ function timer() {
 
     // write current second to document
     timerEl.textContent = 60 - currentSecond
-    // when the timer hits 0, reset countEl and count (the timer gets reset to 1min automatically)
+
+    // when the timer starts fresh, reset countEl and count to zero, and clear the Violators Log and local storage of any history 
+    // (the timer gets reset to 1min automatically). Variable gotten from the global scope generated from being paired with index.js 
+    // in index.html
     if (currentSecond === 0) {
-        recordEl.textContent = " " // recordEl is gotten from the global scope generated from being paired with index.js 
-                                   // in index.html
+        countEl.textContent = 0
+        count = 0
+        recordEl.textContent = " "
+        localStorage.clear()
     }
 }

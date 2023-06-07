@@ -1,6 +1,7 @@
 // grab count-el from DOM to be able to change its value
 const countEl = document.getElementById("count-el")
 const recordEl = document.getElementById("record-el")
+const submitBtn = document.getElementById("report-btn")
 
 // console.log(recordEl)
 
@@ -21,27 +22,19 @@ function record() {
     recordEl.textContent += count + ", "
     // save data to localStorage to be able to persist through other webpages
     localStorage.setItem("violators", recordEl.textContent)
+    // make REPORT button active since now a number of violators is logged
+    submitBtn.style.cursor = "pointer"
+    submitBtn.title = "Click to generate form to submit to the authorities"
     // reset count and countEl to 0 to start anew for next counting
     count = 0
     countEl.textContent = 0
 }
 
-// added functionality to REPORT button
-function report() {
-    const submitBtn = document.getElementById("report-btn")
-
-    // if no violators logged (thus generating a falsy value), don't add functionality to the button
-    if (!localStorage.getItem("violators")) {
-        submitBtn.style.cursor = "not-allowed"
-        submitBtn.title = "Violators log must be populated in order to submit a report"
-        return
-    }
-
+// add functionality to REPORT button
+function redirect() {
     console.log("local storage is not empty")
 
-    // else, add functionality to the button and use it to redirect to the report.html page
-    submitBtn.style.cursor = "pointer"
-    submitBtn.title = ""
+    // redirect to the report.html page
     window.location.href="report.html"
     
     console.log("getting past the redirection line")
