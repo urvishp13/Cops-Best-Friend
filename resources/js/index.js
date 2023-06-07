@@ -25,6 +25,7 @@ function record() {
     // make REPORT button active since now a number of violators is logged
     submitBtn.style.cursor = "pointer"
     submitBtn.title = "Click to generate form to submit to the authorities"
+    submitBtn.disabled = false
     // reset count and countEl to 0 to start anew for next counting
     count = 0
     countEl.textContent = 0
