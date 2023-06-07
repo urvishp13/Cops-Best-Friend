@@ -3,8 +3,6 @@ const countEl = document.getElementById("count-el")
 const recordEl = document.getElementById("record-el")
 const submitBtn = document.getElementById("report-btn")
 
-// console.log(recordEl)
-
 // create and initialize variable count so can use in functions
 let count = 0
 
@@ -18,7 +16,6 @@ function increment() {
 // add functionality to RECORD button
     // make it so that it saves the counted (incremented) value to recordEl
 function record() {
-    // console.log("record button clicked")
     recordEl.textContent += count + ", "
     // save data to localStorage to be able to persist through other webpages
     localStorage.setItem("violators", recordEl.textContent)
@@ -33,10 +30,6 @@ function record() {
 
 // add functionality to REPORT button
 function redirect() {
-    console.log("local storage is not empty")
-
     // redirect to the report.html page
     window.location.href="report.html"
-    
-    console.log("getting past the redirection line")
 }

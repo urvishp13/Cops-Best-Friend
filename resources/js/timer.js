@@ -7,9 +7,7 @@ const timerInterval = setInterval(timer, 1000)
 function timer() {
     // get the current second relative to real-time
     const currentSecond = new Date().getSeconds()
-
-    // console.log(currentSecond)
-
+    
     // write current second to document
     timerEl.textContent = 60 - currentSecond
 

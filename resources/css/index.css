@@ -13,7 +13,6 @@ body {
 main {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.314); /* to add opaque color above the background-image */
-    position: relative;
 }
 
 h1 {

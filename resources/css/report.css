@@ -109,6 +109,7 @@ span {
     color: red;
 }
 
+/* Utility class */
 .border-blue {
     border: 1px solid blue;
 }
