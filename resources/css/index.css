@@ -42,6 +42,7 @@ span.in-title {
     padding: 50px;
     background: rgba(215, 219, 105, 0.659);
     border-radius: 20px;
+    flex-basis: 26%;
 }
 
 .desc {
