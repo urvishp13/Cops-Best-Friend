@@ -12,12 +12,13 @@ function timer() {
     timerEl.textContent = 60 - currentSecond
 
     // when the timer starts fresh, reset countEl and count to zero, and clear the Violators Log and local storage of any history 
-    // (the timer gets reset to 1min automatically). Variable gotten from the global scope generated from being paired with index.js 
+    // (the timer gets reset to 1min automatically). Variables gotten from the global scope generated from being paired with index.js 
     // in index.html
     if (currentSecond === 0) {
         countEl.textContent = 0
         count = 0
         recordEl.textContent = " "
         localStorage.clear()
+        disableSubmitBtn() // content cleared, so need to re-establish initial state of page (gotten from index.js)
     }
 }

@@ -20,9 +20,7 @@ function record() {
     // save data to localStorage to be able to persist through other webpages
     localStorage.setItem("violators", recordEl.textContent)
     // make REPORT button active since now a number of violators is logged
-    submitBtn.style.cursor = "pointer"
-    submitBtn.title = "Click to generate form to submit to the authorities"
-    submitBtn.disabled = false
+    enableSubmitBtn()
     // reset count and countEl to 0 to start anew for next counting
     count = 0
     countEl.textContent = 0
@@ -34,9 +32,19 @@ function redirect() {
     recordEl.textContent = " "
     // re-disable the submit button upon clicking it so, when someone comes back to index.html via the browser's back button, they
     // can't submit the form with no speeders logged
+    disableSubmitBtn()
+    // redirect to the report.html page
+    window.location.href="report.html"
+}
+
+function enableSubmitBtn() {
+    submitBtn.style.cursor = "pointer"
+    submitBtn.title = "Click to generate form to submit to the authorities"
+    submitBtn.disabled = false
+}
+
+function disableSubmitBtn() {
     submitBtn.style.cursor = "not-allowed"
     submitBtn.title = "Violators Log must be populated in order to generate a report"
     submitBtn.disabled = true
-    // redirect to the report.html page
-    window.location.href="report.html"
 }
